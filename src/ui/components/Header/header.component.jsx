@@ -1,6 +1,6 @@
 import "./header.style.css"
 import { useState } from "react"
-import { MenuMobile, menuMobile} from "../../index"
+import { MenuMobile} from "../../index"
 
 export function Header() {
 

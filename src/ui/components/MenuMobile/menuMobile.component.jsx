@@ -1,7 +1,6 @@
 import "./menuMobile.style.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons'
-import { isVisible } from "@testing-library/user-event/dist/utils"
 
 export function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
 
