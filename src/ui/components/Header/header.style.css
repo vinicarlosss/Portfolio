@@ -1,0 +1,50 @@
+.header{
+    width: 100%;
+    padding: 20px;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__ul{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin: 0;
+    padding: 0;
+}
+
+.header__li{
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+.header__li--link{
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+}
+
+.header__li--link::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.header__li--link:hover::after {
+    width: 100%;
+}
+/* ------------ css for small screens ---------- */
+@media only screen and (max-width: 700px){
+    .header__ul{
+        display: none;
+    }
+}

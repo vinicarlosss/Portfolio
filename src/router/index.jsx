@@ -1,8 +1,9 @@
 import { createBrowserRouter } from "react-router-dom"
-import * as uiScreens from "../ui/index"
+import * as uiScreens from "../ui"
 
 export const router = createBrowserRouter([
   {
-    path: "/"
+    path: "/",
+    element: <uiScreens.Home/>
   }
 ])
