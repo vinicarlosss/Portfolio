@@ -15,9 +15,9 @@ export function Header() {
                     <h1>Vinicarlosss</h1>
                     <ul className="header__ul">
                         <li className="header__li"><a className="header__li--link" href="/">Início</a></li>
-                        <li className="header__li"><a className="header__li--link" href="#">Projetos</a></li>
-                        <li className="header__li"><a className="header__li--link" href="#">Sobre mim</a></li>
-                        <li className="header__li"><a className="header__li--link" href="#">Contato</a></li>
+                        <li className="header__li"><a className="header__li--link" href="/">Projetos</a></li>
+                        <li className="header__li"><a className="header__li--link" href="/">Sobre mim</a></li>
+                        <li className="header__li"><a className="header__li--link" href="/">Contato</a></li>
                     </ul>
                 </nav>
             </header>

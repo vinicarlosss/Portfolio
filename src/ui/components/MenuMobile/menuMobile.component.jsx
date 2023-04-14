@@ -24,9 +24,9 @@ export function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
                 <FontAwesomeIcon className="menuMobile__hamburguer-menu--icon" onClick={toggleMode} icon={menuIsVisible ? faTimes : faBars} />
                 <ul className="menuMobile__ul" style={menuIsVisible ? whenMenuIsVisible:null}>
                     <li className="menuMobile__li"><a onClick={toggleMode} className="menuMobile__li--link" href="/">Início</a></li>
-                    <li className="menuMobile__li"><a onClick={toggleMode} className="menuMobile__li--link" href="#">Projetos</a></li>
-                    <li className="menuMobile__li"><a onClick={toggleMode} className="menuMobile__li--link" href="#">Sobre mim</a></li>
-                    <li className="menuMobile__li"><a onClick={toggleMode} className="menuMobile__li--link" href="#">Contato</a></li>
+                    <li className="menuMobile__li"><a onClick={toggleMode} className="menuMobile__li--link" href="/">Projetos</a></li>
+                    <li className="menuMobile__li"><a onClick={toggleMode} className="menuMobile__li--link" href="/">Sobre mim</a></li>
+                    <li className="menuMobile__li"><a onClick={toggleMode} className="menuMobile__li--link" href="/">Contato</a></li>
                 </ul>
             </nav>
         </>
