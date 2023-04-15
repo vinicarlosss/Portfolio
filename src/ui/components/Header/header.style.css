@@ -58,6 +58,9 @@
     .header{
         height: 10vh;
     }
+    .header__logo{
+        font-size: 28px;
+    }
     .header__ul{
         display: none;
     }
