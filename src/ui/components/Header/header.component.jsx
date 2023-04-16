@@ -6,7 +6,6 @@ export function Header() {
 
     const [menuIsVisible, setMenuIsVisible] = useState(false)
 
-
     return (
         <>
             <MenuMobile menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible}/>

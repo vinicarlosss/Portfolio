@@ -2,6 +2,7 @@ import "./menuMobile.style.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons'
 import {WHENMENUISVISIBLE, WHENMENUISVISIBLEFILTER} from "../../../constants/styles"
+import { useEffect } from "react"
 
 export function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
 
