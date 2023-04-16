@@ -1,14 +1,11 @@
 import "./header.style.css"
-import { useState } from "react"
 import { MenuMobile} from "../../index"
 
 export function Header() {
 
-    const [menuIsVisible, setMenuIsVisible] = useState(false)
-
     return (
         <>
-            <MenuMobile menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible}/>
+            <MenuMobile/>
             <header className="header">
                 <nav className="header__nav">
                     <h1 className="header__logo"><span className="header__logo--span">C</span>arlos Vinícius</h1>
