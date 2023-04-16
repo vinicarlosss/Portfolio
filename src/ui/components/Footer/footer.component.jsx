@@ -8,9 +8,9 @@ export function Footer() {
     return (
         <>
             <footer className="footer">
-                <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer"><FontAwesomeIcon className="footer-item-ico" icon={faInstagram} /></a>
-                <a href={GITHUB_URL} target="_blank" rel="noreferrer"><FontAwesomeIcon className="footer-item-ico" icon={faGithub} /></a>
-                <a href={LINKEDLN_URL} target="_blank" rel="noreferrer"><FontAwesomeIcon className="footer-item-ico" icon={faLinkedinIn} /></a>
+                <a href={INSTAGRAM_URL} ><FontAwesomeIcon className="footer-item-ico" icon={faInstagram} /></a>
+                <a href={GITHUB_URL} ><FontAwesomeIcon className="footer-item-ico" icon={faGithub} /></a>
+                <a href={LINKEDLN_URL} ><FontAwesomeIcon className="footer-item-ico" icon={faLinkedinIn} /></a>
                 <a href={`mailto:${EMAIL_IDENTIFIER}`}><FontAwesomeIcon className="footer-item-ico" icon={faEnvelope} /></a>
             </footer>
         </>
