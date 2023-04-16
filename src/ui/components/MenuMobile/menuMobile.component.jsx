@@ -16,9 +16,13 @@ export function MenuMobile() {
         if(menuIsVisible) return css
     }
 
+    const handleNavTransition = () => {
+        if(menuIsVisible) return toggleMode()
+    }
+
     return (
         <>
-            <nav className="menuMobile__nav" style={handlemenuisVisible(WHENMENUISVISIBLEFILTER)} onClick={toggleMode}>
+            <nav className="menuMobile__nav" style={handlemenuisVisible(WHENMENUISVISIBLEFILTER)} onClick={handleNavTransition}>
                 <FontAwesomeIcon className="menuMobile__hamburguer-menu--icon" onClick={toggleMode} icon={menuIsVisible ? faTimes : faBars} />
                 <ul className="menuMobile__ul" style={handlemenuisVisible(WHENMENUISVISIBLE)}>
                     <li className="menuMobile__li"><a onClick={toggleMode} className="menuMobile__li--link" href="/">Início</a></li>
