@@ -1,0 +1,29 @@
+.presentation__main{
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
+    position: relative;
+    background: linear-gradient(55.02deg, #352728 50%, #8E5D52 50%);
+}
+
+.presentation__main--title{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+}
+
+.presentation__main--content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+}
+
+.presentation__img{
+    width: 250px;
+    height: 500px;
+    border-radius: 10%;
+    z-index: 2;
+}
