@@ -4,7 +4,7 @@ import reactImg from '../../../assets/react.png'
 
 export function Presentation() {
     const [text] = useTypewriter({
-        words: ['Olá meu nome é Carlos e eu sou um Desenvolvedor Web.'],
+        words: ['Olá, me chamo Carlos e sou seu Desenvolvedor Web :)'],
         typeSpeed: 50,
     });
 

@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-around;
     height: 600px;
+    width: 100%;
     position: relative;
     background: linear-gradient(55.02deg, #352728 50%, #8E5D52 50%);
 }
@@ -33,7 +34,8 @@
 }
 
 .presentation__main--content--title__text{
-    font-size: 28px;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .presentation__main--content--title__cursor{
@@ -41,7 +43,10 @@
 }
 
 .presentation__main--content--paragraph{
-    width: 100%;
+    font-size: 1.2rem;
+    width: 90%;
+    text-shadow: 2px 2px 4px #c0c0c0;
+    animation: flicker 5s linear;
 }
 
 
@@ -67,5 +72,14 @@
     }
     100%{
         transform: rotate(360deg);
+    }
+}
+
+@keyframes flicker {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
