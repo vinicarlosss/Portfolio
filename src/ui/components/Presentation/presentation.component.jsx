@@ -1,19 +1,30 @@
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import './presentation.style.css'
-import presentationPic from '../../../assets/presentation-pic.png'
+import reactImg from '../../../assets/react.png'
 
 export function Presentation() {
+    const [text] = useTypewriter({
+        words: ['Olá meu nome é Carlos e eu sou um Desenvolvedor Web.'],
+        typeSpeed: 50,
+    });
 
     return (
-        <div className='presentation__main'>
+        <section className='presentation__main'>
             <div className='presentation__main--title'>
-                <h1>Web Developer</h1>
+                <img className='presentation__main--title--reactImg' src={reactImg}/>
             </div>
             <div className='presentation__main--content'>
-                <h2> Olá, meu nome é Carlos e sou um desenvolvedor web.</h2>
-                <p align='justify'>Construo aplicações no mundo virtual com o objetivo de resolver problemas da vida real, o que, para mim, é um princípio de carreira inegociável. 
-                Atualmente, utilizo JavaScript na criação de interfaces e Java/Spring Boot na criação de web API.</p>
+                <div className='presentation__main--content--title'>
+                    <span className='presentation__main--content--title__text'>{text}</span>
+                    <span className='presentation__main--content--title__cursor'>
+                        <Cursor/>
+                    </span>
+                </div>
+                <br/>
+                <p className='presentation__main--content--paragraph' align='justify'>Construo aplicações no mundo virtual com o objetivo de resolver problemas da vida real.
+                    Atualmente, utilizo JavaScript na criação de interfaces e Java/Spring Boot na criação de web API.</p>
             </div>
 
-        </div>
+        </section >
     )
 }

@@ -1,3 +1,4 @@
+/*desktop*/
 .presentation__main{
     display: flex;
     justify-content: space-around;
@@ -8,9 +9,19 @@
 
 .presentation__main--title{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: 100%;
     width: 40%;
+}
+
+.presentation__main--title--reactImg{
+    width: 300px;
+    height: 300px;
+    animation: rise 1.5s ease-in-out forwards,rotate 10s linear infinite;
+    animation-delay: 3s;
+    opacity: 0;
 }
 
 .presentation__main--content{
@@ -21,9 +32,40 @@
     width: 40%;
 }
 
-.presentation__img{
-    width: 250px;
-    height: 500px;
-    border-radius: 10%;
-    z-index: 2;
+.presentation__main--content--title__text{
+    font-size: 28px;
+}
+
+.presentation__main--content--title__cursor{
+    font-size: 28px;
+}
+
+.presentation__main--content--paragraph{
+    width: 100%;
+}
+
+
+/*Animações*/
+@keyframes rise{
+    0%{
+        margin-bottom: -250px;
+        opacity: 0;
+    }
+    50%{
+        margin-bottom: 250px;
+        opacity: 1;
+    }
+    100%{
+        margin-bottom: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
