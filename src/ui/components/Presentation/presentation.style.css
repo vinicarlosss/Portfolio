@@ -99,11 +99,12 @@
         flex-direction: column-reverse;
         align-items: center;
         justify-content: space-around;
-        height: 80vh;
+        height: 65vh;
     }
 
     .presentation__main--title{
         width: 100%;
+        height: 40vh;
         justify-content: start;
     }
 
@@ -121,8 +122,20 @@
     .presentation__main--content--title__text{
         font-size: 24px;
     }
+}
+
+/* ------------ css for medium screens ---------- */
+@media only screen and (min-width: 700px) and (max-width: 1020px){
+
+    .presentation__main{
+        height: 40vh;
+    }
+
+    .presentation__main--content--title__text{
+        font-size: 24px;
+    }
 
     .presentation__main--content--paragraph{
-        width: 100%;
+        font-size: 16px;
     }
 }
