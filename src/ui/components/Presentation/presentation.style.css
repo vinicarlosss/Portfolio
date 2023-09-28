@@ -1,0 +1,128 @@
+/*desktop*/
+.presentation__main{
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(55.02deg, #352728 50%, #8E5D52 50%);
+}
+
+.presentation__main--title{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+}
+
+.presentation__main--title--reactImg{
+    width: 300px;
+    height: 300px;
+    animation: rise 1.5s ease-in-out forwards,rotate 10s linear infinite;
+    animation-delay: 3s;
+    opacity: 0;
+}
+
+.presentation__main--content{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+}
+
+.presentation__main--content--title{
+    display: flex;
+}
+
+.presentation__main--content--title__text{
+    display: inline;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.presentation__main--content--title__cursor{
+    font-size: 28px;
+}
+
+.presentation__main--content--paragraph{
+    font-size: 1.2rem;
+    width: 100%;
+    text-shadow: 2px 2px 4px #c0c0c0;
+    animation: flicker 5s linear;
+}
+
+
+/*Animações*/
+@keyframes rise{
+    0%{
+        margin-bottom: -250px;
+        opacity: 0;
+    }
+    50%{
+        margin-bottom: 250px;
+        opacity: 1;
+    }
+    100%{
+        margin-bottom: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes flicker {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* ------------ css for small screens ---------- */
+@media only screen and (max-width: 700px){
+    .presentation__main{
+        background: #352728;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+        height: 80vh;
+    }
+
+    .presentation__main--title{
+        width: 100%;
+        justify-content: start;
+    }
+
+    .presentation__main--title--reactImg{
+        width: 150px;
+        height: 150px;
+        opacity: 1;
+        animation: rotate 10s linear infinite;
+    }
+
+    .presentation__main--content{
+        width: 80%;
+    }
+
+    .presentation__main--content--title__text{
+        font-size: 24px;
+    }
+
+    .presentation__main--content--paragraph{
+        width: 100%;
+    }
+}
