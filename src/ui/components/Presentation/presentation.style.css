@@ -10,6 +10,7 @@
 
 .presentation__main--title{
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -27,13 +28,20 @@
 
 .presentation__main--content{
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     height: 100%;
     width: 40%;
 }
 
+.presentation__main--content--title{
+    display: flex;
+}
+
 .presentation__main--content--title__text{
+    display: inline;
+    text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
 }
@@ -44,7 +52,7 @@
 
 .presentation__main--content--paragraph{
     font-size: 1.2rem;
-    width: 90%;
+    width: 100%;
     text-shadow: 2px 2px 4px #c0c0c0;
     animation: flicker 5s linear;
 }
@@ -81,5 +89,40 @@
     }
     100%{
         opacity: 1;
+    }
+}
+
+/* ------------ css for small screens ---------- */
+@media only screen and (max-width: 700px){
+    .presentation__main{
+        background: #352728;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+        height: 80vh;
+    }
+
+    .presentation__main--title{
+        width: 100%;
+        justify-content: start;
+    }
+
+    .presentation__main--title--reactImg{
+        width: 150px;
+        height: 150px;
+        opacity: 1;
+        animation: rotate 10s linear infinite;
+    }
+
+    .presentation__main--content{
+        width: 80%;
+    }
+
+    .presentation__main--content--title__text{
+        font-size: 24px;
+    }
+
+    .presentation__main--content--paragraph{
+        width: 100%;
     }
 }

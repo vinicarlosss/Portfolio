@@ -11,14 +11,11 @@ export function Presentation() {
     return (
         <section className='presentation__main'>
             <div className='presentation__main--title'>
-                <img className='presentation__main--title--reactImg' src={reactImg}/>
+                <img className='presentation__main--title--reactImg'alt='react logo' src={reactImg}/>
             </div>
             <div className='presentation__main--content'>
                 <div className='presentation__main--content--title'>
                     <span className='presentation__main--content--title__text'>{text}</span>
-                    <span className='presentation__main--content--title__cursor'>
-                        <Cursor/>
-                    </span>
                 </div>
                 <br/>
                 <p className='presentation__main--content--paragraph' align='justify'>Construo aplicações no mundo virtual com o objetivo de resolver problemas da vida real.
