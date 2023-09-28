@@ -99,11 +99,12 @@
         flex-direction: column-reverse;
         align-items: center;
         justify-content: space-around;
-        height: 80vh;
+        height: 65vh;
     }
 
     .presentation__main--title{
         width: 100%;
+        height: 40vh;
         justify-content: start;
     }
 
